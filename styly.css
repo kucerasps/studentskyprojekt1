@@ -1,0 +1,163 @@
+/* Základní font a pozadí stránky */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f9f9f9;
+    margin: 0;
+    padding: 0 20px;
+    color: #333;
+}
+
+/* Menu nahoře */
+.menu {
+    background-color: #4CAF50;
+    padding: 10px;
+    text-align: center;
+}
+
+.menu a {
+    color: white;
+    margin: 0 15px;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.menu a:hover {
+    text-decoration: underline;
+}
+
+/* Logo a text vedle sebe */
+img {
+    width: 150px;
+    margin-right: 20px;
+    vertical-align: middle;
+}
+
+h1 {
+    margin: 0;
+}
+
+h2 {
+    margin-top: 40px;
+    color: #4CAF50;
+}
+
+/* Seznam otevírací doby */
+ul {
+    list-style: none;
+    padding: 0;
+}
+
+ul li {
+    padding: 2px 0;
+}
+
+/* Footer */
+footer {
+    text-align: center;
+    margin-top: 30px;
+    color: #999;
+    font-size: 14px;
+}
+
+/* Odstupy a marginy pro čistotu */
+p {
+    margin: 5px 0;
+}
+
+h1, p {
+    line-height: 1.5;
+}
+
+/* Styl pro každou sekci */
+h2 {
+    margin-top: 40px;
+    color: #4CAF50;
+}
+
+.dolni-boxy {
+    display: flex;
+    gap: 20px;
+    margin-top: 40px;
+    margin-bottom: 40px;
+}
+
+.dolni-boxy .box {
+    flex: 1;
+    text-align: center;
+    padding: 20px;
+    background: #f3f3f3;
+    border-radius: 10px;
+    text-decoration: none;
+    color: black;
+    transition: 0.2s;
+    border: 1px solid #ddd;
+}
+
+.dolni-boxy .box:hover {
+    background: #e0e0e0;
+    transform: scale(1.03);
+}
+.zpet-btn {
+    display: inline-block;
+    padding: 10px 18px;
+    background-color: #f0f0f0;
+    border-radius: 8px;
+    text-decoration: none;
+    color: black;
+    font-weight: bold;
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+    transition: 0.2s;
+}
+
+.zpet-btn:hover {
+    background-color: #e0e0e0;
+    transform: scale(1.03);
+}
+.uvodni-foto {
+    width: 100%;
+    max-width: 900px;
+    display: block;
+    margin: 20px auto;
+    border-radius: 10px;
+}
+.hlavni-obrazek {
+    width: 100%;
+    max-width: 800px;
+    display: block;
+    margin: 15px auto 25px auto;
+    border-radius: 10px;
+}
+.social-icons {
+    text-align: center;
+    margin: 20px 0;
+}
+
+.social-icons img {
+    width: 40px;
+    margin: 0 10px;
+    transition: transform 0.3s;
+}
+
+.social-icons img:hover {
+    transform: scale(1.2);
+}
+.galerie-zdroje h3 {
+    font-size: 16px;      /* nadpis trochu větší */
+    margin-top: 30px;
+    color: #4CAF50;       /* můžeš použít barvu sekce */
+}
+
+.galerie-zdroje p {
+    font-size: 12px;      /* odkazy malé, nenápadné */
+    margin: 2px 0;
+}
+
+.galerie-zdroje a {
+    color: #555;          /* decentní barva */
+    text-decoration: underline;
+}
+
+.galerie-zdroje a:hover {
+    color: #4CAF50;       /* při hoveru zvýrazní */
+}
