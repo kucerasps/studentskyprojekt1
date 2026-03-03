@@ -1,225 +1,243 @@
-body{
-font-family:Arial;
-margin:0;
-padding:90px 20px;
-background:#f9f9f9;
-color:#333;
+/* ====================
+   ZÁKLADNÍ STYL
+   ==================== */
+body {
+    font-family: Arial;
+    margin: 0;
+    padding: 90px 20px;
+    background: #f9f9f9;
+    color: #333;
 }
 
-/* MENU */
-.menu{
-
-position:fixed;
-top:0;
-left:0;
-width:100%;
-
-background:#4CAF50;
-padding:15px;
-text-align:center;
-
-z-index:1000;
+/* ====================
+   MENU
+   ==================== */
+.menu {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background: #4CAF50;
+    padding: 15px;
+    text-align: center;
+    z-index: 1000;
 }
 
-.menu a{
-
-color:white;
-margin:0 15px;
-text-decoration:none;
-font-weight:bold;
-
+.menu a {
+    color: white;
+    margin: 0 15px;
+    text-decoration: none;
+    font-weight: bold;
 }
 
-.menu a:hover{
-
-text-decoration:underline;
-
+.menu a:hover {
+    text-decoration: underline;
 }
 
-
-/* LOGO */
-
-.logo{
-
-width:150px;
-
+/* ====================
+   LOGO
+   ==================== */
+.logo {
+    width: 150px;
 }
 
-
-/* HLAVNI OBRAZEK */
-
-.hlavni-obrazek{
-
-width:100%;
-max-width:800px;
-
-display:block;
-margin:auto;
-
-border-radius:10px;
-
+/* ====================
+   HLAVNÍ OBRÁZEK
+   ==================== */
+.hlavni-obrazek {
+    width: 100%;
+    max-width: 800px;
+    display: block;
+    margin: auto;
+    border-radius: 10px;
 }
 
-
-/* BOX MENU */
-
-.dolni-boxy{
-
-display:flex;
-gap:20px;
-margin-top:40px;
-
+/* ====================
+   SOCIÁLNÍ IKONY
+   ==================== */
+.social-icons {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    margin: 20px 0;
 }
 
-.box{
-
-flex:1;
-background:#eee;
-padding:20px;
-text-align:center;
-
-border-radius:10px;
-
-text-decoration:none;
-color:black;
-
-}
-
-.box:hover{
-
-background:#ddd;
-
-}
-
-
-/* SOCIAL */
-
-.social-icons{
-
-text-align:center;
-margin:20px;
-
-}
-
-.social-icons img{
-
-width:40px;
-margin:10px;
-
-}
-
-
-/* ZPET TLACITKO */
-
-.zpet-btn{
-
-display:inline-block;
-
-padding:10px 15px;
-
-background:#eee;
-
-border-radius:8px;
-
-text-decoration:none;
-
-color:black;
-
-}
-
-
-/* GALERIE */
-
-.galerie{
-
-text-align:center;
-
-}
-
-.galerie img{
-
-width:220px;
-margin:15px;
-
-border-radius:10px;
-
-transition:0.4s;
-
-cursor:pointer;
-
-position:relative;
-
-}
-
-/* HODNĚ VELKÉ ZVĚTŠENÍ */
-
-.galerie img:hover{
-
-transform:scale(2); /* zvětší 2x */
-
-z-index:999;
-
-box-shadow:0px 10px 25px rgba(0,0,0,0.5);
-
-}
-.social-icons{
-    display:flex;
-    justify-content:center; /* loga uprostřed */
-    align-items:center;     /* vertikální zarovnání */
-    gap:20px;               /* malé rovnoměrné mezery mezi logy */
-    margin:20px 0;
-}
-
-.social-icons img{
-    width:50px;            /* velikost log */
+.social-icons img {
+    width: 50px;
     transition: transform 0.3s;
-    cursor:pointer;
+    cursor: pointer;
 }
 
-.social-icons img:hover{
-    transform:scale(1.5);  /* hover efekt */
+.social-icons img:hover {
+    transform: scale(1.5);
 }
 
-/* specificky pro YouTube logo, pokud vizuálně sedne lépe */
-.social-icons img.youtube{
-    margin-top:0; /* uprav podle potřeby, můžeš i posunout o pár px dolů */
-}
-/* Boxy v dolní části stránky */
+/* ====================
+   BOXY V DOLNÍ ČÁSTI
+   ==================== */
 .dolni-boxy {
-  display: flex;
-  justify-content: space-between;
-  margin-bottom: 40px; /* Přidáme mezeru mezi boxy a footerem */
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+    margin-top: 40px;
+    margin-bottom: 30px; /* prostor mezi boxy a footerem */
 }
 
-/* Styl pro footer */
+/* BOXY – světle šedé a oddělené */
+.box {
+    flex: 1;
+    background: #f0f0f0;       /* světle šedé pozadí */
+    border: 1px solid #ccc;    /* tenké ohraničení */
+    padding: 20px;
+    text-align: center;
+    border-radius: 10px;       /* mírně zaoblené rohy */
+    text-decoration: none;
+    color: #222;
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+    box-shadow: 0px 2px 6px rgba(0,0,0,0.1);
+}
+
+.box:hover {
+    background: #e6e6e6;       /* trochu tmavší při hover */
+    transform: translateY(-3px);
+    box-shadow: 0px 4px 10px rgba(0,0,0,0.15);
+}
+
+/* ====================
+   KONTAKTNÍ BLOK – vypadá jako box
+   ==================== */
+.kontakt-box {
+    background: #f0f0f0;       /* světle šedé pozadí */
+    border: 1px solid #bbb;    /* jemné ohraničení */
+    padding: 18px 22px;
+    border-radius: 10px;
+    margin-top: 25px;
+    margin-bottom: 25px;
+    box-shadow: 0px 2px 5px rgba(0,0,0,0.08);
+}
+
+.kontakt-box h3 {
+    margin-bottom: 8px;
+    color: #222;
+}
+
+.kontakt-box p {
+    margin: 4px 0;
+    color: #333;
+    line-height: 1.4;
+}
+
+/* ====================
+   ZPĚT TLAČÍTKO
+   ==================== */
+.zpet-btn {
+    display: inline-block;
+    padding: 10px 15px;
+    background: #eee;
+    border-radius: 8px;
+    text-decoration: none;
+    color: black;
+    margin-top: 15px;
+    transition: 0.2s ease;
+}
+
+.zpet-btn:hover {
+    background: #ddd;
+}
+
+/* ====================
+   GALERIE
+   ==================== */
+.galerie {
+    text-align: center;
+    margin-top: 10px;
+}
+
+.galerie img {
+    width: 220px;
+    margin: 15px;
+    border-radius: 10px;
+    transition: 0.4s;
+    cursor: pointer;
+    position: relative;
+}
+
+.galerie img:hover {
+    transform: scale(1.3);
+    z-index: 999;
+    box-shadow: 0px 10px 25px rgba(0,0,0,0.5);
+}
+
+/* ====================
+   ČÁRA (hr)
+   ==================== */
+hr {
+    border: none;
+    height: 2px;
+    background: #ddd;
+    margin-top: 30px;
+    margin-bottom: 25px;
+}
+
+/* ====================
+   FOOTER – světlé a oddělené
+   ==================== */
 footer.footer-flex {
-  display: flex; /* Flexbox pro uspořádání */
-  justify-content: space-between; /* Rozdělení prostoru mezi sekcemi */
-  align-items: center; /* Vertikální zarovnání na střed */
-  padding: 20px 50px; /* Vnitřní odsazení */
-  background-color: #f1f1f1; /* Světle šedé pozadí */
-  color: #333;
-  margin-top: 40px; /* Dáme mu prostor od zbytku obsahu nad footerem */
-  border-radius: 15px; /* Zaoblené rohy footeru */
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Jemný stín pro efekt */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 22px 50px;
+    background-color: #e8e8e8; /* světle šedé pozadí */
+    border-top: 3px solid #ccc; /* horní ohraničení */
+    color: #333;
+    font-size: 15px;
 }
 
-/* Případné úpravy pro kontakt a copyright v footeru */
-footer .kontakt,
-footer .copyright {
-  margin: 0; /* Zrušení vnějších mezer */
-  padding: 5px; /* Vnitřní odsazení pro každý blok */
+footer.footer-flex section {
+    flex: 1;
 }
 
-footer .kontakt h3 {
-  margin: 0 0 5px 0; /* Mezera pouze mezi nadpisem a textem */
+footer.footer-flex .kontakt h3 {
+    margin-bottom: 8px;
+    font-size: 17px;
+    color: #222;
 }
 
-footer .kontakt p {
-  margin: 5px 0; /* Mezera mezi jednotlivými kontaktními informacemi */
+footer.footer-flex p {
+    margin: 4px 0;
+    line-height: 1.4;
 }
 
-footer .copyright {
-  text-align: right; /* Zarovnání copyrightu na pravou stranu */
-  font-size: 14px; /* Menší velikost písma pro copyright */
+footer.footer-flex .copyright {
+    text-align: right;
+    font-size: 14px;
+    color: #555;
+}
+
+/* ====================
+   RESPONSIVNÍ STYL – MOBIL
+   ==================== */
+@media (max-width: 768px) {
+
+  .dolni-boxy {
+      flex-direction: column;
+      gap: 18px;
+  }
+
+  footer.footer-flex {
+      flex-direction: column;
+      text-align: center;
+      gap: 8px;
+  }
+
+  footer.footer-flex .copyright {
+      text-align: center;
+  }
+
+  .menu a {
+      display: block;
+      margin: 8px 0;
+  }
+
 }
